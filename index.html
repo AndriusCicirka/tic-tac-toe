@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Tic-Tac-Toe</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="content-wrap">
+				<h1 class="game-heading">Tic-Tac-Toe</h1>
+				<div class="game-score--wrap hide">
+					<div class="game-score">
+						<span>You: </span>
+						<span class="game-score--player1--value">0</span>
+					</div>
+					<span class="game-score--divider">-</span>
+					<div class="game-score">
+						<span>Foe: </span>
+						<span class="game-score--player2--value">0</span>
+					</div>
+				</div>
+				<span class="game-under--heading hide"></span>
+				<div class="game-side--select hide">
+					<div class="game-side--x">X</div>
+					<span class="game-side--separator"></span>
+					<div class="game-side--o">O</div>
+				</div>
+				<div class="game-grid hide">
+					<div class="game-grid--cell" id="1-cell"></div>
+					<div class="game-grid--cell" id="2-cell"></div>
+					<div class="game-grid--cell" id="3-cell"></div>
+					<div class="game-grid--cell" id="4-cell"></div>
+					<div class="game-grid--cell" id="5-cell"></div>
+					<div class="game-grid--cell" id="6-cell"></div>
+					<div class="game-grid--cell" id="7-cell"></div>
+					<div class="game-grid--cell" id="8-cell"></div>
+					<div class="game-grid--cell" id="9-cell"></div>
+				</div>
+				<div class="game-button--cluster">
+					<button id="start-button" class="game-button">Start</button>
+					<button id="play-button" class="game-button hide">Play</button>
+					<button id="restart-button" class="game-button hide">Restart</button>
+					<button id="play-again--button" class="game-button hide">
+						Play Again
+					</button>
+					<button id="menu-button" class="game-button hide">
+						Back to Menu
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>

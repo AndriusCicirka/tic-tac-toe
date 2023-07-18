@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.hide {
+	display: none !important;
+}
+
+/*
+*
+*
+*
+*
+*/
+
+.container {
+	width: 100%;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-wrap {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-heading {
+	font-size: 72px;
+	font-weight: 600;
+}
+
+.game-under--heading {
+	margin-top: 20px;
+	font-size: 36px;
+}
+
+.game-score--wrap {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-score {
+	font-size: 24px;
+	margin-top: 20px;
+	margin-inline: 20px;
+	letter-spacing: 1px;
+}
+
+.game-score--divider {
+	margin-top: 20px;
+	font-size: 24px;
+}
+
+/*
+*
+*
+*
+*
+*/
+
+.game-grid {
+	display: grid;
+	background-color: black;
+
+	grid-template-rows: repeat(3, 150px);
+	grid-template-columns: repeat(3, 150px);
+
+	grid-gap: 5px;
+
+	margin: 75px;
+	margin-bottom: 150px;
+}
+
+.game-grid--cell {
+	width: 150px;
+	height: 150px;
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	background-color: rgb(255, 255, 255);
+	cursor: pointer;
+	transition: 0.1s;
+
+	font-size: 200px;
+	overflow: hidden;
+
+	padding-bottom: 30px;
+}
+
+.game-grid--cell:hover {
+	background-color: rgb(230, 230, 230);
+}
+
+/*
+*
+*
+*
+*
+*/
+
+.game-button-cluster {
+}
+
+.game-button {
+	background-color: black;
+	color: white;
+
+	margin-inline: 10px;
+	min-width: 125px;
+	height: 50px;
+
+	font-size: 18px;
+
+	outline: 0;
+	border: 0;
+
+	cursor: pointer;
+	transition: 0.25s;
+}
+
+.game-button:hover {
+	background-color: white;
+	color: black;
+}
+
+#start-button {
+	margin-top: 20px;
+}
+
+/*
+*
+*
+*
+*
+*/
+
+.game-side--select {
+	display: flex;
+	align-items: center;
+	font-size: 300px;
+	margin: 100px;
+}
+
+.game-side--separator {
+	width: 10px;
+	height: 350px;
+	background-color: black;
+}
+
+.game-side--select > div {
+	margin: 0 20px;
+}
+
+.game-side--x,
+.game-side--o {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 350px;
+	height: 350px;
+
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.game-side--x:hover,
+.game-side--o:hover {
+	color: white;
+	background-color: black;
+}
+
+.game-side--x:active,
+.game-side--o:active {
+	font-size: 80%;
+}
+
+.game-side--x--active,
+.game-side--o--active {
+	color: white;
+	background-color: black;
+}
+
+.red {
+	transition: 0.2s;
+	color: crimson;
+}
